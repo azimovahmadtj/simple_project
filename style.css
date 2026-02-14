@@ -136,4 +136,20 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.activity-img {
+  width: 420px;
+  height: 320px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.activity-img-1 {
+  background-image: url("img/image 21.png");
+}
+
+.activity-img-2 {
+  background-image: url("img/img4.png");
 }/*# sourceMappingURL=style.css.map */
