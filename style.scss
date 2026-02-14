@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6f7f9;
+  color: #1b1f2a;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 30px;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+  }
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #0e1a2b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+
+  &.primary {
+    margin-top: 20px;
+  }
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-left {
+  flex: 1;
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #6b7280;
+    max-width: 420px;
+  }
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.img {
+  width: 120px;
+  height: 280px;
+  background: #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+
+  background-image: url('./af257cf4a794e36a1c5bbc26867ed56a53ffa2af.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.img--1 {
+    background-image: url('./meritt-thomas-u-Hb93V6IWI-unsplash\ 1.png');
+  height: 260px;
+}
+
+.img--2 {
+  height: 320px;
+}
+$cottage-images: (
+  1: "./image\image 13.png"
+);
+
+.cottage {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 80px auto;
+  align-items: center;
+}
+
+.cottage-img {
+  width: 420px;
+  height: 520px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+@each $i, $url in $cottage-images {
+  .cottage-img:nth-child(#{$i}) {
+    background-image: url(#{$url});
+  }
+}
+
+.cottage-text {
+  max-width: 500px;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #6b7280;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.btn {
+  padding: 10px 18px;
+  background: #0e1a2b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
